@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.BossInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.BossInfo">
+    <!--@mbg.generated generated on Thu Oct 31 12:54:41 CST 2019.-->
+    <!--@Table boss_info-->
+    <id column="boss_id" jdbcType="INTEGER" property="bossId" />
+    <result column="boss_name" jdbcType="VARCHAR" property="bossName" />
+    <result column="boss_age" jdbcType="INTEGER" property="bossAge" />
+    <result column="boss_sex" jdbcType="SMALLINT" property="bossSex" />
+    <result column="boss_phone" jdbcType="VARCHAR" property="bossPhone" />
+    <result column="boss_avatar" jdbcType="VARCHAR" property="bossAvatar" />
+    <result column="boss_user_id" jdbcType="INTEGER" property="bossUserId" />
+    <result column="boss_idcard_number" jdbcType="VARCHAR" property="bossIdcardNumber" />
+    <result column="boss_address" jdbcType="VARCHAR" property="bossAddress" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Oct 31 12:54:41 CST 2019.-->
+    boss_id, boss_name, boss_age, boss_sex, boss_phone, boss_avatar, boss_user_id, boss_idcard_number, 
+    boss_address
+  </sql>
+</mapper>

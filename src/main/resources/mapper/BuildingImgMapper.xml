@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.BuildingImgMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.BuildingImg">
+    <!--@mbg.generated generated on Tue Oct 29 17:29:12 CST 2019.-->
+    <!--@Table building_img-->
+    <id column="building_img_id" jdbcType="INTEGER" property="buildingImgId" />
+    <result column="building_img_name" jdbcType="VARCHAR" property="buildingImgName" />
+    <result column="build_img_url" jdbcType="VARCHAR" property="buildImgUrl" />
+    <result column="building_id" jdbcType="INTEGER" property="buildingId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Oct 29 17:29:12 CST 2019.-->
+    building_img_id, building_img_name, build_img_url, building_id
+  </sql>
+</mapper>

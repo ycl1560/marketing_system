@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.SaleRecordInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.SaleRecordInfo">
+    <!--@mbg.generated generated on Thu Oct 31 12:39:52 CST 2019.-->
+    <!--@Table sale_record_info-->
+    <id column="sale_record_id" jdbcType="INTEGER" property="saleRecordId" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="customer_id" jdbcType="INTEGER" property="customerId" />
+    <result column="room_info_id" jdbcType="INTEGER" property="roomInfoId" />
+    <result column="sale_time" jdbcType="VARCHAR" property="saleTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Oct 31 12:39:52 CST 2019.-->
+    sale_record_id, user_id, customer_id, room_info_id, sale_time
+  </sql>
+    <select id="selectUserSaleRecordCountByUserId" resultType="int">
+      select count(*) from sale_record_info where sale_record_info.user_id=#{bossUserId}
+    </select>
+  <select id="selectSaleRecordByUserId" resultMap="BaseResultMap">
+    select s.sale_record_id, user_id, customer_id, room_info_id, sale_time from sale_record_info s where s.user_id=#{userId} order by s.sale_record_id
+  </select>
+  <select id="selectSaleRecordByUserIdAndDate" resultMap="BaseResultMap">
+    select s.sale_record_id, user_id, customer_id, room_info_id, sale_time from sale_record_info s where s.sale_time like CONCAT('%',#{saleTime},'%') and  s.user_id=#{userId}  order by s.sale_record_id
+  </select>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.CustomerInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.CustomerInfo">
+    <!--@mbg.generated generated on Thu Oct 31 18:21:03 CST 2019.-->
+    <!--@Table customer_info-->
+    <id column="customer_id" jdbcType="INTEGER" property="customerId" />
+    <result column="customer_name" jdbcType="VARCHAR" property="customerName" />
+    <result column="customer_age" jdbcType="INTEGER" property="customerAge" />
+    <result column="customer_sex" jdbcType="SMALLINT" property="customerSex" />
+    <result column="customer_phone" jdbcType="VARCHAR" property="customerPhone" />
+    <result column="customer_intention_property" jdbcType="VARCHAR" property="customerIntentionProperty" />
+    <result column="customer_createtime" jdbcType="TIMESTAMP" property="customerCreatetime" />
+    <result column="customer_failuretime" jdbcType="TIMESTAMP" property="customerFailuretime" />
+    <result column="customer_purchase_date" jdbcType="TIMESTAMP" property="customerPurchaseDate" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Oct 31 18:21:03 CST 2019.-->
+    customer_id, customer_name, customer_age, customer_sex, customer_phone, customer_intention_property, 
+    customer_createtime, customer_failuretime, customer_purchase_date, user_id
+  </sql>
+    <select id="selectCountByUserId" resultType="int">
+      select count(*) from customer_info c where c.user_id=#{userId}
+    </select>
+    <select id="selectCustomerByUserId" resultMap="BaseResultMap">
+      select c.customer_id, customer_name, customer_age, customer_sex, customer_phone, customer_intention_property, customer_createtime, customer_failuretime, customer_purchase_date, user_id from customer_info c where c.user_id=#{userId}
+    </select>
+</mapper>

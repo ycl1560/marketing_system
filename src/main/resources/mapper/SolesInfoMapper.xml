@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.SolesInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.SolesInfo">
+    <!--@mbg.generated generated on Fri Nov 01 17:28:33 CST 2019.-->
+    <!--@Table soles_info-->
+    <id column="soles_id" jdbcType="INTEGER" property="solesId" />
+    <result column="soles_name" jdbcType="VARCHAR" property="solesName" />
+    <result column="soles_age" jdbcType="INTEGER" property="solesAge" />
+    <result column="soles_sex" jdbcType="SMALLINT" property="solesSex" />
+    <result column="soles_phone" jdbcType="VARCHAR" property="solesPhone" />
+    <result column="soles_img_url" jdbcType="VARCHAR" property="solesImgUrl" />
+    <result column="soles_idcard_number" jdbcType="VARCHAR" property="solesIdcardNumber" />
+    <result column="soles_address" jdbcType="VARCHAR" property="solesAddress" />
+    <result column="superior_user_id" jdbcType="INTEGER" property="superiorUserId" />
+    <result column="soles_user_id" jdbcType="INTEGER" property="solesUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Fri Nov 01 17:28:33 CST 2019.-->
+    soles_id, soles_name, soles_age, soles_sex, soles_phone, soles_img_url, soles_idcard_number, 
+    soles_address, superior_user_id, soles_user_id
+  </sql>
+</mapper>

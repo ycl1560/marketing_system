@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.BusinessManagerInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.BusinessManagerInfo">
+    <!--@mbg.generated generated on Thu Oct 31 15:31:03 CST 2019.-->
+    <!--@Table business_manager_info-->
+    <id column="business_manager_id" jdbcType="INTEGER" property="businessManagerId" />
+    <result column="business_manager_name" jdbcType="VARCHAR" property="businessManagerName" />
+    <result column="business_manager_age" jdbcType="INTEGER" property="businessManagerAge" />
+    <result column="business_manager_sex" jdbcType="SMALLINT" property="businessManagerSex" />
+    <result column="business_manager_phone" jdbcType="VARCHAR" property="businessManagerPhone" />
+    <result column="business_avatar" jdbcType="VARCHAR" property="businessAvatar" />
+    <result column="Business_idcard_number" jdbcType="VARCHAR" property="businessIdcardNumber" />
+    <result column="Business_address" jdbcType="VARCHAR" property="businessAddress" />
+    <result column="Business_user_id" jdbcType="INTEGER" property="businessUserId" />
+    <result column="superior_user_id" jdbcType="INTEGER" property="superiorUserId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Oct 31 15:31:03 CST 2019.-->
+    business_manager_id, business_manager_name, business_manager_age, business_manager_sex, 
+    business_manager_phone, business_avatar, Business_idcard_number, Business_address, 
+    Business_user_id, superior_user_id
+  </sql>
+</mapper>

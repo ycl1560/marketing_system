@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.RolePermissionsMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.RolePermissions">
+    <!--@mbg.generated generated on Wed Oct 30 12:16:34 CST 2019.-->
+    <!--@Table role_permissions-->
+    <id column="role_permissions_id" jdbcType="INTEGER" property="rolePermissionsId" />
+    <result column="role_id" jdbcType="INTEGER" property="roleId" />
+    <result column="permissions_id" jdbcType="INTEGER" property="permissionsId" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Wed Oct 30 12:16:34 CST 2019.-->
+    role_permissions_id, role_id, permissions_id
+  </sql>
+</mapper>

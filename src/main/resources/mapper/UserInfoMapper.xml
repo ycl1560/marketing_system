@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.UserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.UserInfo">
+    <!--@mbg.generated generated on Tue Oct 29 17:54:48 CST 2019.-->
+    <!--@Table user_info-->
+    <id column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="user_password" jdbcType="VARCHAR" property="userPassword" />
+    <result column="user_state" jdbcType="SMALLINT" property="userState" />
+    <result column="user_createtime" jdbcType="TIMESTAMP" property="userCreatetime" />
+    <result column="user_logintime" jdbcType="TIMESTAMP" property="userLogintime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Tue Oct 29 17:54:48 CST 2019.-->
+    user_id, user_name, user_password, user_state, user_createtime, user_logintime
+  </sql>
+    <select id="selectUserByUserName" resultMap="BaseResultMap">
+      select u.user_id, user_name, user_password, user_state, user_createtime, user_logintime from user_info u where u.user_name=#{userName}
+    </select>
+</mapper>

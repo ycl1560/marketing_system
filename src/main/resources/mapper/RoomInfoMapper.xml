@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.RoomInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.RoomInfo">
+    <!--@mbg.generated generated on Thu Oct 31 11:57:01 CST 2019.-->
+    <!--@Table room_info-->
+    <result column="room_info_id" jdbcType="INTEGER" property="roomInfoId" />
+    <result column="building_id" jdbcType="INTEGER" property="buildingId" />
+    <result column="room_building_number" jdbcType="INTEGER" property="roomBuildingNumber" />
+    <result column="room_unit_number" jdbcType="INTEGER" property="roomUnitNumber" />
+    <result column="room_number" jdbcType="INTEGER" property="roomNumber" />
+  </resultMap>
+</mapper>

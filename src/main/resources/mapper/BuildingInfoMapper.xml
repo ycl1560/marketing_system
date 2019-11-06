@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yunhang.marketing_system.mapper.BuildingInfoMapper">
+  <resultMap id="BaseResultMap" type="com.yunhang.marketing_system.entity.BuildingInfo">
+    <!--@mbg.generated generated on Thu Oct 31 18:43:19 CST 2019.-->
+    <!--@Table building_info-->
+    <id column="building_id" jdbcType="INTEGER" property="buildingId" />
+    <result column="building_name" jdbcType="VARCHAR" property="buildingName" />
+    <result column="building_address" jdbcType="VARCHAR" property="buildingAddress" />
+    <result column="building_postcode" jdbcType="VARCHAR" property="buildingPostcode" />
+    <result column="building_rings" jdbcType="INTEGER" property="buildingRings" />
+    <result column="building_phone" jdbcType="VARCHAR" property="buildingPhone" />
+    <result column="building_sole_state" jdbcType="SMALLINT" property="buildingSoleState" />
+    <result column="building_property_type" jdbcType="VARCHAR" property="buildingPropertyType" />
+    <result column="building_type" jdbcType="VARCHAR" property="buildingType" />
+    <result column="building_state" jdbcType="SMALLINT" property="buildingState" />
+    <result column="building_decoration_states" jdbcType="VARCHAR" property="buildingDecorationStates" />
+    <result column="building_development_cycle" jdbcType="VARCHAR" property="buildingDevelopmentCycle" />
+    <result column="building_starting_date" jdbcType="DATE" property="buildingStartingDate" />
+    <result column="building_completion_date" jdbcType="DATE" property="buildingCompletionDate" />
+    <result column="building_opening_time" jdbcType="DATE" property="buildingOpeningTime" />
+    <result column="building_checkin_date" jdbcType="DATE" property="buildingCheckinDate" />
+    <result column="building_floor_space" jdbcType="FLOAT" property="buildingFloorSpace" />
+    <result column="building_area" jdbcType="FLOAT" property="buildingArea" />
+    <result column="building_volume_ratio" jdbcType="FLOAT" property="buildingVolumeRatio" />
+    <result column="building_green_rate" jdbcType="FLOAT" property="buildingGreenRate" />
+    <result column="building_floor_state" jdbcType="VARCHAR" property="buildingFloorState" />
+    <result column="building_ householder_number" jdbcType="INTEGER" property="buildingHouseholderNumber" />
+    <result column="building_parking_number" jdbcType="INTEGER" property="buildingParkingNumber" />
+    <result column="building_selling_price" jdbcType="VARCHAR" property="buildingSellingPrice" />
+    <result column="building_rent_prices" jdbcType="VARCHAR" property="buildingRentPrices" />
+    <result column="building_property_fee" jdbcType="VARCHAR" property="buildingPropertyFee" />
+    <result column="building_property_company" jdbcType="VARCHAR" property="buildingPropertyCompany" />
+    <result column="building_supporting_facilities" jdbcType="VARCHAR" property="buildingSupportingFacilities" />
+    <result column="building_equally_shared_area" jdbcType="FLOAT" property="buildingEquallySharedArea" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Thu Oct 31 18:43:19 CST 2019.-->
+    building_id, building_name, building_address, building_postcode, building_rings, 
+    building_phone, building_sole_state, building_property_type, building_type, building_state, 
+    building_decoration_states, building_development_cycle, building_starting_date, building_completion_date, 
+    building_opening_time, building_checkin_date, building_floor_space, building_area, 
+    building_volume_ratio, building_green_rate, building_floor_state, `building_ householder_number`, 
+    building_parking_number, building_selling_price, building_rent_prices, building_property_fee, 
+    building_property_company, building_supporting_facilities, building_equally_shared_area
+  </sql>
+</mapper>
